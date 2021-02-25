@@ -15,6 +15,8 @@ class CreateResellersTable extends Migration
     {
         Schema::create('resellers', function (Blueprint $table) {
             $table->id();
+            $table->string('reseller_number', 50);
+            $table->string('name', 50);
             $table->timestamps();
         });
     }
