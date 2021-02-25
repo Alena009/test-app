@@ -9,6 +9,8 @@ class Reseller extends Model
 {
     use HasFactory;
     
+    public $guarded = [];    
+    
     public function displays()
     {
         return $this->hasMany(Display::class);

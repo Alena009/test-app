@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/displays');
 });
 
-Route::resource('/resellers', 'ResellerController');    
+Route::resource('/displays', 'App\Http\Controllers\DisplayController');    

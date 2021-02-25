@@ -14,6 +14,6 @@ class ResellerSeeder extends Seeder
      */
     public function run()
     {
-        Reseller::factory()->count(150)->hasDisplays(3)->create();
+        Reseller::factory()->count(5)->hasDisplays(3)->create();
     }
 }

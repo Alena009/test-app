@@ -9,6 +9,8 @@ class Display extends Model
 {
     use HasFactory;
     
+    public $guarded = [];
+    
     public function reseller()
     {
         return $this->belongsTo(Reseller::class);
