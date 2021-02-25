@@ -22,7 +22,8 @@ class ResellerFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'reseller_number' => $this->faker->text($maxNbChars = 50),
+            'name' => $this->faker->name            
         ];
     }
 }

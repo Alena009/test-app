@@ -22,7 +22,9 @@ class DisplayFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'serial_number' => $this->faker->text($maxNbChars = 50),
+            'type' => $this->faker->text($maxNbChars = 50),
+            'file_path' => $this->faker->text($maxNbChars = 150)
         ];
     }
 }

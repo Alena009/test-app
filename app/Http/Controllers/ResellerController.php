@@ -9,5 +9,5 @@ class ResellerController extends BaseController
 {
     function __construct(Reseller $reseller) {
         parent::__construct($reseller);        
-    }     
+    }
 }

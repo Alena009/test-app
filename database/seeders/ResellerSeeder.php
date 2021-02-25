@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use App\Models\Reseller;
 
 class ResellerSeeder extends Seeder
 {
@@ -13,6 +14,6 @@ class ResellerSeeder extends Seeder
      */
     public function run()
     {
-        //
+        Reseller::factory()->count(150)->hasDisplays(3)->create();
     }
 }

@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Reseller extends Model
 {
     use HasFactory;
+    
+    public function displays()
+    {
+        return $this->hasMany(Display::class);
+    }       
 }

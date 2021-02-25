@@ -15,6 +15,11 @@ class CreateDisplaysTable extends Migration
     {
         Schema::create('displays', function (Blueprint $table) {
             $table->id();
+            $table->string('serial_number', 50);
+            $table->string('type', 50);
+            $table->unsignedBigInteger('reseller_id');
+            $table->foreign('reseller_id')->references('id')->on('resellers')->onDelete('cascade');  
+            $table->string('file_path', 150);
             $table->timestamps();
         });
     }
